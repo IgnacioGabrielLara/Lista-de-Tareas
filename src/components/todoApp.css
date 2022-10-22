@@ -1,0 +1,147 @@
+body{
+    background-color:#ecd079;
+    margin: 0;
+    padding: 0;
+}
+
+.todoContainer{
+
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 100px auto;
+
+}
+
+.todoCreateForm{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    height: 30px;
+}
+
+.todoCreateForm input{
+
+    border:solid 1px rgb(194, 194, 194);
+    border-radius: 5px;
+
+}
+
+.buttonCreate{
+
+    background-color:#352f3d;
+    color: white;
+}
+
+.todosContainer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.todo{
+   
+    max-width: 500px;
+    background-color:#d95b45;
+    padding: 5px;
+    
+}
+
+.elementoInfo{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 10px;
+    
+}
+
+.todoTitle{
+
+    min-width: 70%;
+    word-break: break-all;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.botones{
+
+    display: flex;
+    min-width: 30%;
+    max-width: 30%;
+    gap: 5px;
+}
+
+.botones button,.todoForm button{
+
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    background-color:#c02948;
+    width: auto;
+    color: white;
+}
+
+.todoForm{
+
+    display: flex;
+    gap: 10px;
+}
+
+.todoForm input{
+
+    background-color: #eeddab;
+    border: none;
+    border-radius: 5px;
+}
+
+@media(max-width:500px){
+
+    .todoContainer{
+
+        height: 50%;
+        width: 50%;
+        margin: 0;
+
+    }
+
+    .todoCreateForm{
+        margin-left: 100%;
+        margin-top: 50%;
+    }
+
+   .todosContainer{
+    
+        margin-left: 10px;
+        width: 320px;
+   }
+
+   .todo{
+    max-width: 320px;
+   }
+
+   .elementoInfo{
+    max-width: 320px;
+    gap: 0;
+  
+   }
+
+   .todoTitle{
+    min-width: none;
+   }
+
+   .botones button{
+
+    width: 40%;
+    font-size: 8px;
+    padding: 0;
+    
+   }
+
+
+   
+}
